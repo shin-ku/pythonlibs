@@ -1,3 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# torch関連ライブラリのインポート
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+
 README = 'Common Library for pytorch'
 
 # 損失計算用
