@@ -1,10 +1,16 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import japanize_matplotlib
 
-# torch関連ライブラリのインポート
 import torch
+from torch import tensor
 import torch.nn as nn
 import torch.optim as optim
+from torchviz import make_dot
+import torchvision.transforms as transforms
+from torch.utils.data import Dataset, DataLoader
+import torchvision.datasets as datasets
+from tqdm.notebook import tqdm
 
 
 README = 'Common Library for pytorch'
@@ -192,3 +198,4 @@ def torch_seed(seed=123):
     torch.cuda.manual_seed(seed)
     torch.backends.cudnn.deterministic = True
     torch.use_deterministic_algorithms = True
+
